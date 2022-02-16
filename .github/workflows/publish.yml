@@ -1,12 +1,6 @@
 name: Publish
 
-on:
-  release:
-    types:
-      # Note: editing the prerelease then marking as release does not trigger
-      # this pipeline
-      - prereleased
-      - released
+on: push
 
 jobs:
   release-pypi-linux:
